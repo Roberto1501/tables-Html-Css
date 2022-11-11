@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        table,
+        td,
+        th {
+
+            width: 400px;
+            border-collapse: collapse;
+            border: 2px solid #00ffead7;
+
+
+            box-shadow: 0 0 5px #00ffead7, inset 0 0 5px #00ffead7;
+            color: #00ffead7;
+
+        }
+
+        thead {
+            text-align: left;
+        }
+
+        tbody {
+            text-align: center;
+        }
+
+        tfoot {
+            text-align: right;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        a {
+            border: 1px solid #00ffead7;
+            padding: 15px;
+            color: #00ffead7;
+
+        }
+
+        a:hover {
+            box-shadow: 0 0 15px #00ffead7, inset 0 0 15px #00ffead7;
+            text-shadow: 0 0 15px #00ffead7;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: #00ffead7;">
+            Exercio de tabelas.
+        </h1>
+    </header>
+    <main>
+        <section style="display: flex ;">
+            <div>
+                <h3 style="color: #00ffead7;">Tabela simples</h3>
+                <table>
+                    <!--Cabeçalho da tabela-->
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                        </tr>
+                    </thead>
+                    <!--Corpo da tabela-->
+                    <tbody>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                    <!--Footer da tabela-->
+                    <tfoot>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+
+
+                <h3 style="color:#00ffead7 ;">Tabela intermedia</h3>
+                <table>
+                    <!--Cabeçalho da tabela-->
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                        </tr>
+                    </thead>
+                    <!--Corpo da tabela-->
+                    <tbody>
+                        <tr>
+                            <td colspan="3">4</td>
+
+                        </tr>
+                    </tbody>
+                    <!--Footer da tabela-->
+                    <tfoot>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+
+
+
+                <!--Não se coloca thead nem tbody nem tfoot na hora que tenho que misturar rowspan con colspan-->
+                <h3 style="color: #00ffead7 ;">Tabela Complexa</h3>
+                <table>
+
+                    <tr>
+                        <th style="text-align: left;">1</th>
+                        <th style="text-align: left ;">2</th>
+                        <th rowspan="3">3</th>
+                    </tr>
+
+                    <!--Corpo da tabela-->
+
+                    <tr>
+                        <td colspan="2">4</td>
+                    </tr>
+
+
+
+                    <tr style="text-align: left;">
+                        <td>5</td>
+                        <td>6</td>
+
+
+                    </tr>
+
+                </table>
+            </div>
+
+            <div style="margin: auto; display: flex;">
+                <p>
+                    <a href="./atividade2-layout.html">Tabela 2</a>
+                    <a href="atividade-tabelas3.html">tabela 3</a>
+                </p>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+    <footer style="color:#00ffead7">
+        GrowDev
+    </footer>
+</body>
+
+</html>

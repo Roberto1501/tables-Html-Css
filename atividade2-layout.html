@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            text-decoration: none;
+        }
+
+        table,
+        td,
+        th {
+            border: 2px solid #00ffead7;
+
+            border-collapse: collapse;
+            box-shadow: 0 0 5px #00ffead7, inset 0 0 5px #00ffead7;
+            color: #00ffead7;
+
+        }
+
+        body {
+            background-color: black;
+        }
+
+        a {
+            border: 1px solid #00ffead7;
+            padding: 15px;
+            color: #00ffead7;
+
+
+
+
+
+        }
+
+        a:hover {
+            box-shadow: 0 0 15px #00ffead7, inset 0 0 15px #00ffead7;
+            text-shadow: 0 0 15px #00ffead7;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<header>
+    <h1 style="color:#00ffead7;">
+        Layout site
+    </h1>
+</header>
+
+<body>
+    <main>
+        <section style="display: flex ;">
+            <div>
+                <table style="width:600px; height: 400px;">
+                    <thead style="height: 80px ;">
+                        <tr>
+                            <th style="text-align: center ;" colspan="2">
+                                TOPO
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td style="width: 25%; text-align: center;">
+                                MENU
+                            </td>
+                            <td style="width: 75%; text-align: center;">
+                                CONTEUDO
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot style="height: 45px;">
+                        <tr>
+                            <td style="text-align: center ;" colspan="2">
+                                RODAPÈ
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div style="margin: auto; display: flex;">
+                <p>
+                    <a href="./atividade-table1.html">Tabela 1</a>
+                    <a href="atividade-tabelas3.html">tabela 3</a>
+                </p>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer style="color:#00ffead7">
+        GrowDev
+    </footer>
+</body>
+
+</html>
